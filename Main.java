@@ -10,16 +10,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String stringArray[] = input.split(" ");
-        int array[]=new int[stringArray.length];
-        for (int i=0;i<stringArray.length;++i) {
-            array[i]=Integer.parseInt(stringArray[i]);
+        int array[] = new int[stringArray.length];
+        for (int i = 0; i < stringArray.length; ++i) {
+            array[i] = Integer.parseInt(stringArray[i]);
         }
-        sorter.idiotSort(array);
-        System.out.println("Sorted array:");
-        for (int item:array)
-        {
-            System.out.print(item+" ");
-        }
-
+        // Ввели массив
+        sorter.sort(array);
+        /*for(int a:array)
+        System.out.print(a+" ");*/
     }
 }
